@@ -1,5 +1,5 @@
-﻿#include "OpenGL_drawing.hpp"
-#include "glut.h"
+﻿#include "glut.h"
+
 #include <iostream>
 
 using namespace std;
@@ -7,8 +7,14 @@ using namespace std;
 int rx = 138, ry = 138;
 int xCenter = 250, yCenter = 250;
 
+void setPixel(const GLint x, const GLint y)
+{
+    glBegin(GL_POINTS);
+    glVertex2i(x, y);
+    glEnd();
+}
 
-void ellipseMidPoint()
+void ellipseMidPoint(float rx, float ry, float xCenter, float yCenter)
 {
     float x = 0;
     float y = ry;
@@ -82,7 +88,7 @@ void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);
     glPointSize(1.0);
-    ellipseMidPoint();
+    ellipseMidPoint(rx,ry,xCenter,yCenter);
     //display_square();
 }
 int main(int argc, char** argv)
