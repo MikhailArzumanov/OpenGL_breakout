@@ -1,44 +1,33 @@
-﻿#include "glut.h"
-
-#include<iostream>
+﻿#include "OpenGL_drawing.hpp"
+#include "glut.h"
+#include <iostream>
 
 using namespace std;
+
 int rx = 138, ry = 138;
 int xCenter = 250, yCenter = 250;
 
-void myinit(void)
-{
-    glClearColor(1.0, 1.0, 1.0, 0.0);
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    gluOrtho2D(0.0, 388.0, 0.0, 480.0);
-}
 
-void setPixel(GLint x, GLint y)
-{
-    glBegin(GL_POINTS);
-    glVertex2i(x, y);
-    glEnd();
-}
 void ellipseMidPoint()
 {
     float x = 0;
     float y = ry;
-    float p1 = ry * ry - (rx * rx) * ry + (rx * rx) * (0.25);
-    float dx = 2 * (ry * ry) * x;
-    float dy = 2 * (rx * rx) * y;
+    float p1 = ry*ry-(rx*rx)*ry+(rx*rx)*(0.25f);
+    float dx = 2*(ry*ry)*x;
+    float dy = 2*(rx*rx)*y;
     glColor3ub(rand() % 255, rand() % 255, rand() % 255);
     while (dx < dy)
     {
-        setPixel(xCenter + x, yCenter + y);
-        setPixel(xCenter - x, yCenter + y);
-        setPixel(xCenter + x, yCenter - y);
-        setPixel(xCenter - x, yCenter - y);
+        cout << x << " " << y << " " << dx << " " << dy << " " << p1 <<"\n";
+        setPixel(xCenter+x, yCenter+y);
+        setPixel(xCenter-x, yCenter+y);
+        setPixel(xCenter+x, yCenter-y);
+        setPixel(xCenter-x, yCenter-y);
         if (p1 < 0)
         {
             x = x + 1;
             dx = 2 * (ry * ry) * x;
-            p1 = p1 + dx + (ry * ry);
+            p1 += dx + (ry * ry);
         }
         else
         {
@@ -49,10 +38,8 @@ void ellipseMidPoint()
             p1 = p1 + dx - dy + (ry * ry);
         }
     }
-    glFlush();
 
-    float p2 = (ry * ry) * (x + 0.5) * (x + 0.5) + (rx * rx) * (y
-        - 1) * (y - 1) - (rx * rx) * (ry * ry);
+    float p2 = (ry*ry)*(x+0.5f)*(x+0.5f) + (rx*rx)*(y-1)*(y-1) - (rx*rx)*(ry*ry);
     glColor3ub(rand() % 255, rand() % 255, rand() % 255);
     while (y > 0)
     {
@@ -79,21 +66,35 @@ void ellipseMidPoint()
     }
     glFlush();
 }
+
+void display_square() {
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex2i(120,120);
+    glVertex2i(230,120);
+    glVertex2i(230,230);
+    glVertex2i(120,230);
+    glEnd();
+    glFlush();
+}
+
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);
-    glColor3f(1.0, 0.0, 0.0);
-    glPointSize(2.0);
+    glPointSize(1.0);
     ellipseMidPoint();
-    glFlush();
+    //display_square();
 }
 int main(int argc, char** argv)
 {
     glutInit(&argc, argv);
-    glutInitWindowSize(388, 480);
+    glutInitWindowSize(390, 480);
     glutInitWindowPosition(10, 10);
     glutCreateWindow("User_Name");
-    myinit();
+    glClearColor(0.0, 0.0, 0.0, 0.0);
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluOrtho2D(0.0, 388.0, 0.0, 480.0);
     glutDisplayFunc(display);
     glutMainLoop();
     return 0;

@@ -13,15 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Файлы заголовков\OpenGL_Headers">
+      <UniqueIdentifier>{27fb1dd9-cb5e-4819-aa4e-6acb70375483}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\env">
+      <UniqueIdentifier>{b67087b4-1263-4e91-b218-4199c294314e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\env">
+      <UniqueIdentifier>{5e597378-290e-494e-8f0d-11d5329247a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\env\point">
+      <UniqueIdentifier>{47d11029-031b-4613-a64c-b6c715a9d449}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\env\OpenGL_drawing">
+      <UniqueIdentifier>{4d405ccd-6802-410b-a16c-fc48ac9b3602}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenGL_test.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="point_operators.cpp">
+      <Filter>Исходные файлы\env\point</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL_set_pixel.cpp">
+      <Filter>Исходные файлы\env\OpenGL_drawing</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="glut.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\OpenGL_Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="point.hpp">
+      <Filter>Файлы заголовков\env</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGL_drawing.hpp">
+      <Filter>Файлы заголовков\env</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

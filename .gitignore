@@ -1,1 +1,8 @@
 /.vs
+Debug
+OpenGL_test/Debug
+*.*obj
+*.*log
+*.db
+/x64
+/x86
