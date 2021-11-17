@@ -3,3 +3,7 @@ glut32.lib to C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\A
 glut.dll and glut32.dll to C:\Windows\SysWOW64 and C:\Windows\System32
 in project -- additional library directories -- path to folder with glut32.lib and glut.lib
 additional dependencies -- glut32.lib
+
+documentation:
+https://www.hardforum.ru/download/RedBook.pdf
+https://www.opengl.org.ru/docs/pg/0101.html
