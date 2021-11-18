@@ -142,7 +142,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="color_set_to_env.cpp" />
+    <ClCompile Include="display.cpp" />
+    <ClCompile Include="drawables.cpp" />
+    <ClCompile Include="ellipse_constructors.cpp" />
+    <ClCompile Include="ellipse_draw.cpp" />
+    <ClCompile Include="init_drawables.cpp" />
+    <ClCompile Include="init_env.cpp" />
+    <ClCompile Include="init_glut.cpp" />
+    <ClCompile Include="init_glut_functions.cpp" />
+    <ClCompile Include="init_glut_window.cpp" />
     <ClCompile Include="OpenGL_test.cpp" />
+    <ClCompile Include="rectangle_constructors.cpp" />
+    <ClCompile Include="rectangle_draw.cpp" />
+    <ClCompile Include="shape_getters.cpp" />
+    <ClCompile Include="shape_setters.cpp" />
+    <ClCompile Include="the_square.cpp" />
+    <ClCompile Include="tick.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="circle.hpp" />
+    <ClInclude Include="color.hpp" />
+    <ClInclude Include="drawable.hpp" />
+    <ClInclude Include="drawables.hpp" />
+    <ClInclude Include="ellipse.hpp" />
+    <ClInclude Include="main_program_functions.hpp" />
+    <ClInclude Include="point.hpp" />
+    <ClInclude Include="rectangle.hpp" />
+    <ClInclude Include="shape.hpp" />
+    <ClInclude Include="the_square.hpp" />
+    <ClInclude Include="square.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
