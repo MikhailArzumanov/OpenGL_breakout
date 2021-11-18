@@ -1,8 +1,6 @@
 /.vs
-Debug
-OpenGL_test/Debug
 *.*obj
 *.*log
-*.db
+*.*db
 /x64
-/x86
+/Debug
