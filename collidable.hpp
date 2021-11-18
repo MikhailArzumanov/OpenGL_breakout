@@ -1,5 +1,13 @@
 #pragma once
 class Collidable {
-	virtual bool is_collide_with(Collidable* another) = 0;
-	virtual void collide_with(Collidable* another)	  = 0;
+public:
+	enum CollidableType {
+		racket,
+		ball,
+		net
+	};
+	CollidableType type;
+
+	virtual bool is_colliding_with(Collidable* another) = 0;
+	virtual void collide_with(Collidable* another)	    = 0;
 };
