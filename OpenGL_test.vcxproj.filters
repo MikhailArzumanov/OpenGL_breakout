@@ -22,38 +22,56 @@
     <Filter Include="Source Files\environment\color">
       <UniqueIdentifier>{95f90a40-abc4-40e2-8f06-2a13cb6708f9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\drawables">
-      <UniqueIdentifier>{9f085ad0-5fe8-4657-a04d-ede609e7889d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\drawables\shapes">
-      <UniqueIdentifier>{fc85e163-0ed5-4cf3-bbde-6370fdb0633e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\drawables\shapes\rectangle">
-      <UniqueIdentifier>{57efa830-1d9e-4e77-9d28-d30407615db1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\shapes">
-      <UniqueIdentifier>{a93b813d-7d25-4a43-8f7a-7cbebfd4bf24}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\drawables">
-      <UniqueIdentifier>{f708703d-a6ef-4694-82be-ab68e3e55345}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\drawables\shapes">
-      <UniqueIdentifier>{25a3a655-d4f7-4bbb-944d-94b9ebb7ab3c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\drawables\shapes\ellipse">
-      <UniqueIdentifier>{4e008ab7-ab66-49c1-8d3f-f6ee8e28b4b6}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\main_program">
       <UniqueIdentifier>{ab63dda4-dc52-440e-b3c9-82fca28429d2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\shapes">
-      <UniqueIdentifier>{eca6bf1a-d505-4194-a10b-db0e303c6cfd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\shapes\shape">
-      <UniqueIdentifier>{f3da31ef-2b0b-4b37-b506-e17eab65f4ec}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\main_program">
       <UniqueIdentifier>{9bb03b2e-2772-4209-a8e4-521ce30d8460}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\interfaces">
+      <UniqueIdentifier>{5fa6e7b1-eff5-4912-b95c-2449cec878fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\shapes">
+      <UniqueIdentifier>{25a3a655-d4f7-4bbb-944d-94b9ebb7ab3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\shapes\abstract">
+      <UniqueIdentifier>{1050aaf3-27cc-4153-b84b-9fc3fcdb3bad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shapes">
+      <UniqueIdentifier>{fc85e163-0ed5-4cf3-bbde-6370fdb0633e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shapes\rectangle">
+      <UniqueIdentifier>{57efa830-1d9e-4e77-9d28-d30407615db1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shapes\ellipse">
+      <UniqueIdentifier>{4e008ab7-ab66-49c1-8d3f-f6ee8e28b4b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shapes\abstract">
+      <UniqueIdentifier>{9e6307a2-a9b7-4626-a5e0-1b155d5affc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shapes\abstract\shape">
+      <UniqueIdentifier>{f3da31ef-2b0b-4b37-b506-e17eab65f4ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shapes\game_objects">
+      <UniqueIdentifier>{61cf5bee-fa8d-4d9e-812d-69c55a585a23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\shapes\game_objects">
+      <UniqueIdentifier>{0833a893-53c8-48e3-9ad9-54c35b5a703f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\shapes\game_objects\abstract">
+      <UniqueIdentifier>{d4b5836f-34fa-4cda-99ac-2bb7e35be779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shapes\game_objects\racket">
+      <UniqueIdentifier>{24199ca8-dd13-4402-a068-5bd840669b53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\environment\point">
+      <UniqueIdentifier>{06fdef30-d2e9-4cfc-842f-28b24224755c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shapes\game_objects\ball">
+      <UniqueIdentifier>{9553c146-86cf-4439-b6cc-5b58ac5581e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shapes\game_objects\Net">
+      <UniqueIdentifier>{a069cf58-ce0f-46cd-930f-c43dabbbfc35}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -64,22 +82,22 @@
       <Filter>Source Files\environment\color</Filter>
     </ClCompile>
     <ClCompile Include="rectangle_draw.cpp">
-      <Filter>Source Files\drawables\shapes\rectangle</Filter>
+      <Filter>Source Files\shapes\rectangle</Filter>
     </ClCompile>
     <ClCompile Include="rectangle_constructors.cpp">
-      <Filter>Source Files\drawables\shapes\rectangle</Filter>
+      <Filter>Source Files\shapes\rectangle</Filter>
     </ClCompile>
     <ClCompile Include="ellipse_draw.cpp">
-      <Filter>Source Files\drawables\shapes\ellipse</Filter>
+      <Filter>Source Files\shapes\ellipse</Filter>
     </ClCompile>
     <ClCompile Include="ellipse_constructors.cpp">
-      <Filter>Source Files\drawables\shapes\ellipse</Filter>
+      <Filter>Source Files\shapes\ellipse</Filter>
     </ClCompile>
     <ClCompile Include="shape_getters.cpp">
-      <Filter>Source Files\shapes\shape</Filter>
+      <Filter>Source Files\shapes\abstract\shape</Filter>
     </ClCompile>
     <ClCompile Include="shape_setters.cpp">
-      <Filter>Source Files\shapes\shape</Filter>
+      <Filter>Source Files\shapes\abstract\shape</Filter>
     </ClCompile>
     <ClCompile Include="init_drawables.cpp">
       <Filter>Source Files\main_program</Filter>
@@ -108,14 +126,68 @@
     <ClCompile Include="init_glut.cpp">
       <Filter>Source Files\main_program</Filter>
     </ClCompile>
+    <ClCompile Include="racket_constructors.cpp">
+      <Filter>Source Files\shapes\game_objects\racket</Filter>
+    </ClCompile>
+    <ClCompile Include="racket_is_colliding_with.cpp">
+      <Filter>Source Files\shapes\game_objects\racket</Filter>
+    </ClCompile>
+    <ClCompile Include="racket_collide_with.cpp">
+      <Filter>Source Files\shapes\game_objects\racket</Filter>
+    </ClCompile>
+    <ClCompile Include="racket_should_die.cpp">
+      <Filter>Source Files\shapes\game_objects\racket</Filter>
+    </ClCompile>
+    <ClCompile Include="racket_move.cpp">
+      <Filter>Source Files\shapes\game_objects\racket</Filter>
+    </ClCompile>
+    <ClCompile Include="point_operators.cpp">
+      <Filter>Source Files\environment\point</Filter>
+    </ClCompile>
+    <ClCompile Include="racket_die.cpp">
+      <Filter>Source Files\shapes\game_objects\racket</Filter>
+    </ClCompile>
+    <ClCompile Include="ball_constructors.cpp">
+      <Filter>Source Files\shapes\game_objects\ball</Filter>
+    </ClCompile>
+    <ClCompile Include="ball_move.cpp">
+      <Filter>Source Files\shapes\game_objects\ball</Filter>
+    </ClCompile>
+    <ClCompile Include="ball_collide_with.cpp">
+      <Filter>Source Files\shapes\game_objects\ball</Filter>
+    </ClCompile>
+    <ClCompile Include="ball_is_colliding_with.cpp">
+      <Filter>Source Files\shapes\game_objects\ball</Filter>
+    </ClCompile>
+    <ClCompile Include="rectangle_is_colliding.cpp">
+      <Filter>Source Files\shapes\rectangle</Filter>
+    </ClCompile>
+    <ClCompile Include="ball_should_die.cpp">
+      <Filter>Source Files\shapes\game_objects\ball</Filter>
+    </ClCompile>
+    <ClCompile Include="ball_die.cpp">
+      <Filter>Source Files\shapes\game_objects\ball</Filter>
+    </ClCompile>
+    <ClCompile Include="net_constructors.cpp">
+      <Filter>Source Files\shapes\game_objects\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="net_die.cpp">
+      <Filter>Source Files\shapes\game_objects\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="net_move.cpp">
+      <Filter>Source Files\shapes\game_objects\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="net_should_die.cpp">
+      <Filter>Source Files\shapes\game_objects\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="net_collide_with.cpp">
+      <Filter>Source Files\shapes\game_objects\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="net_is_colliding_with.cpp">
+      <Filter>Source Files\shapes\game_objects\Net</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="drawable.hpp">
-      <Filter>Header Files\drawables</Filter>
-    </ClInclude>
-    <ClInclude Include="shape.hpp">
-      <Filter>Header Files\shapes</Filter>
-    </ClInclude>
     <ClInclude Include="point.hpp">
       <Filter>Header Files\environment</Filter>
     </ClInclude>
@@ -123,16 +195,16 @@
       <Filter>Header Files\environment</Filter>
     </ClInclude>
     <ClInclude Include="rectangle.hpp">
-      <Filter>Header Files\drawables\shapes</Filter>
+      <Filter>Header Files\shapes</Filter>
     </ClInclude>
     <ClInclude Include="square.hpp">
-      <Filter>Header Files\drawables\shapes</Filter>
+      <Filter>Header Files\shapes</Filter>
     </ClInclude>
     <ClInclude Include="ellipse.hpp">
-      <Filter>Header Files\drawables\shapes</Filter>
+      <Filter>Header Files\shapes</Filter>
     </ClInclude>
     <ClInclude Include="circle.hpp">
-      <Filter>Header Files\drawables\shapes</Filter>
+      <Filter>Header Files\shapes</Filter>
     </ClInclude>
     <ClInclude Include="main_program_functions.hpp">
       <Filter>Header Files\main_program</Filter>
@@ -142,6 +214,27 @@
     </ClInclude>
     <ClInclude Include="the_square.hpp">
       <Filter>Header Files\environment</Filter>
+    </ClInclude>
+    <ClInclude Include="shape.hpp">
+      <Filter>Header Files\shapes\abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="drawable.hpp">
+      <Filter>Header Files\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="collidable.hpp">
+      <Filter>Header Files\interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="racket.hpp">
+      <Filter>Header Files\shapes\game_objects</Filter>
+    </ClInclude>
+    <ClInclude Include="game_object.hpp">
+      <Filter>Header Files\shapes\game_objects\abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="ball.hpp">
+      <Filter>Header Files\shapes\game_objects</Filter>
+    </ClInclude>
+    <ClInclude Include="net.hpp">
+      <Filter>Header Files\shapes\game_objects</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

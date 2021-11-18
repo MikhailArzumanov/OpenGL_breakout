@@ -142,6 +142,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ball_collide_with.cpp" />
+    <ClCompile Include="ball_constructors.cpp" />
+    <ClCompile Include="ball_die.cpp" />
+    <ClCompile Include="ball_is_colliding_with.cpp" />
+    <ClCompile Include="ball_move.cpp" />
+    <ClCompile Include="ball_should_die.cpp" />
     <ClCompile Include="color_set_to_env.cpp" />
     <ClCompile Include="display.cpp" />
     <ClCompile Include="drawables.cpp" />
@@ -152,22 +158,41 @@
     <ClCompile Include="init_glut.cpp" />
     <ClCompile Include="init_glut_functions.cpp" />
     <ClCompile Include="init_glut_window.cpp" />
+    <ClCompile Include="net_collide_with.cpp" />
+    <ClCompile Include="net_constructors.cpp" />
+    <ClCompile Include="net_die.cpp" />
+    <ClCompile Include="net_is_colliding_with.cpp" />
+    <ClCompile Include="net_move.cpp" />
+    <ClCompile Include="net_should_die.cpp" />
     <ClCompile Include="OpenGL_test.cpp" />
+    <ClCompile Include="point_operators.cpp" />
+    <ClCompile Include="racket_collide_with.cpp" />
+    <ClCompile Include="racket_constructors.cpp" />
+    <ClCompile Include="racket_die.cpp" />
+    <ClCompile Include="racket_is_colliding_with.cpp" />
+    <ClCompile Include="racket_move.cpp" />
+    <ClCompile Include="racket_should_die.cpp" />
     <ClCompile Include="rectangle_constructors.cpp" />
     <ClCompile Include="rectangle_draw.cpp" />
+    <ClCompile Include="rectangle_is_colliding.cpp" />
     <ClCompile Include="shape_getters.cpp" />
     <ClCompile Include="shape_setters.cpp" />
     <ClCompile Include="the_square.cpp" />
     <ClCompile Include="tick.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ball.hpp" />
     <ClInclude Include="circle.hpp" />
+    <ClInclude Include="collidable.hpp" />
     <ClInclude Include="color.hpp" />
     <ClInclude Include="drawable.hpp" />
     <ClInclude Include="drawables.hpp" />
     <ClInclude Include="ellipse.hpp" />
+    <ClInclude Include="game_object.hpp" />
     <ClInclude Include="main_program_functions.hpp" />
+    <ClInclude Include="net.hpp" />
     <ClInclude Include="point.hpp" />
+    <ClInclude Include="racket.hpp" />
     <ClInclude Include="rectangle.hpp" />
     <ClInclude Include="shape.hpp" />
     <ClInclude Include="the_square.hpp" />

@@ -2,6 +2,7 @@
 #include "collidable.hpp"
 
 class GameObject : public Collidable {
+protected:
 	bool is_living;
 public:
 	bool do_lives() {return is_living;}
