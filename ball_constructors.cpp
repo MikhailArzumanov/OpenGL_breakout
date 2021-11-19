@@ -8,4 +8,5 @@ const Color ball_color{40,70,112};
 
 Ball::Ball():Rectangle(ball_start_position,ball_size,ball_color){
 	v = ball_start_velocity; type = Collidable::ball;
+	is_living = true;
 }

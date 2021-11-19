@@ -7,6 +7,7 @@ void tick(int null) {
     move();
     collide();
     live();
+    handle_keys();
     glutPostRedisplay();
     glutTimerFunc(40, tick, 0);
 }

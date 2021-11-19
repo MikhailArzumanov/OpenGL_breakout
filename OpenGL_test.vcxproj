@@ -154,13 +154,16 @@
     <ClCompile Include="draw_scene.cpp" />
     <ClCompile Include="ellipse_constructors.cpp" />
     <ClCompile Include="ellipse_draw.cpp" />
+    <ClCompile Include="handle_keys.cpp" />
     <ClCompile Include="init_ball.cpp" />
     <ClCompile Include="init_env.cpp" />
     <ClCompile Include="init_glut.cpp" />
     <ClCompile Include="init_glut_functions.cpp" />
     <ClCompile Include="init_glut_window.cpp" />
+    <ClCompile Include="init_key_map.cpp" />
     <ClCompile Include="init_net.cpp" />
     <ClCompile Include="init_racket.cpp" />
+    <ClCompile Include="is_key_down.cpp" />
     <ClCompile Include="live.cpp" />
     <ClCompile Include="move.cpp" />
     <ClCompile Include="net_collide_with.cpp" />
@@ -176,6 +179,8 @@
     <ClCompile Include="racket_die.cpp" />
     <ClCompile Include="racket_is_colliding_with.cpp" />
     <ClCompile Include="racket_move.cpp" />
+    <ClCompile Include="racket_move_left.cpp" />
+    <ClCompile Include="racket_move_right.cpp" />
     <ClCompile Include="racket_should_die.cpp" />
     <ClCompile Include="rectangle_constructors.cpp" />
     <ClCompile Include="rectangle_draw.cpp" />
@@ -195,6 +200,7 @@
     <ClInclude Include="drawable.hpp" />
     <ClInclude Include="ellipse.hpp" />
     <ClInclude Include="game_object.hpp" />
+    <ClInclude Include="is_key_down.hpp" />
     <ClInclude Include="main_program_functions.hpp" />
     <ClInclude Include="net.hpp" />
     <ClInclude Include="point.hpp" />

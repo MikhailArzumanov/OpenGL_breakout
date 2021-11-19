@@ -6,4 +6,5 @@ const Color net_color{177,103,12};
 
 Net::Net(point c_):Rectangle(c_,net_size,net_color){
 	type = Collidable::net;
+	is_living = true;
 }

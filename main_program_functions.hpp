@@ -3,6 +3,7 @@
 void init_net();
 void init_ball();
 void init_racket();
+void init_key_map();
 void init_env();
 
 void move();
@@ -10,6 +11,8 @@ void move();
 void collide();
 
 void live();
+
+void handle_keys();
 
 void draw_scene();
 void display();

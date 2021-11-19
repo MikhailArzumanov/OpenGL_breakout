@@ -88,6 +88,9 @@
     <Filter Include="Header Files\environment\the_scene">
       <UniqueIdentifier>{13e65cee-72e3-4b09-ae5d-4748bde70192}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\environment\scene">
+      <UniqueIdentifier>{fe5f9170-1725-46b3-87e1-83079a4d38a2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenGL_test.cpp">
@@ -177,15 +180,6 @@
     <ClCompile Include="net_is_colliding_with.cpp">
       <Filter>Source Files\shapes\game_objects\net</Filter>
     </ClCompile>
-    <ClCompile Include="the_ball.cpp">
-      <Filter>Source Files\environment</Filter>
-    </ClCompile>
-    <ClCompile Include="the_net.cpp">
-      <Filter>Source Files\environment</Filter>
-    </ClCompile>
-    <ClCompile Include="the_racket.cpp">
-      <Filter>Source Files\environment</Filter>
-    </ClCompile>
     <ClCompile Include="init_glut.cpp">
       <Filter>Source Files\main_program\init\init_glut</Filter>
     </ClCompile>
@@ -221,6 +215,30 @@
     </ClCompile>
     <ClCompile Include="live.cpp">
       <Filter>Source Files\main_program</Filter>
+    </ClCompile>
+    <ClCompile Include="racket_move_right.cpp">
+      <Filter>Source Files\shapes\game_objects\racket</Filter>
+    </ClCompile>
+    <ClCompile Include="racket_move_left.cpp">
+      <Filter>Source Files\shapes\game_objects\racket</Filter>
+    </ClCompile>
+    <ClCompile Include="handle_keys.cpp">
+      <Filter>Source Files\main_program</Filter>
+    </ClCompile>
+    <ClCompile Include="the_ball.cpp">
+      <Filter>Source Files\environment\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="the_net.cpp">
+      <Filter>Source Files\environment\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="the_racket.cpp">
+      <Filter>Source Files\environment\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="is_key_down.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="init_key_map.cpp">
+      <Filter>Source Files\main_program\init\init_env</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -277,6 +295,9 @@
     </ClInclude>
     <ClInclude Include="scene.hpp">
       <Filter>Header Files\environment\the_scene</Filter>
+    </ClInclude>
+    <ClInclude Include="is_key_down.hpp">
+      <Filter>Header Files\environment</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

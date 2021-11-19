@@ -11,7 +11,10 @@ public:
 	bool is_colliding_with(Collidable* another);
 	void collide_with(Collidable* another);
 
-	virtual bool should_die();
-	virtual void move();
-	virtual void die();
+	bool should_die();
+	void move();
+	void die();
+
+	void move_right();
+	void move_left();
 };

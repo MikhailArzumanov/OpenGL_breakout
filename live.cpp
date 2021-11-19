@@ -15,7 +15,13 @@ void live() {
 		let net = *iterator;
 		if (!net->does_live()) {
 			net->die();
-			the_net.erase(iterator--);
+			if (iterator != the_net.begin()) {
+				the_net.erase(iterator--);
+			}
+			else {
+				the_net.erase(iterator);
+				iterator = the_net.begin();
+			}
 		}
 	}
 }
