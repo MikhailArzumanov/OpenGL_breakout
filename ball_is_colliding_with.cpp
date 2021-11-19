@@ -1,11 +1,12 @@
+#include "racket.hpp"
 #include "ball.hpp"
-#include <cmath>
+#include "net.hpp"
 
 bool Ball::is_colliding_with(Collidable* another) {
 	switch (another->type) {
 	case Collidable::racket:
+		return is_colliding(static_cast<Rectangle*>(static_cast<Racket*>(another)));
 	case Collidable::net:
-		auto obj = (Rectangle*)another;
-		return is_colliding(obj);
+		return is_colliding(static_cast<Rectangle*>(static_cast<Net*>(another)));
 	}
 }

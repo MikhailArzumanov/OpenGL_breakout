@@ -5,6 +5,5 @@ void Net::collide_with(Collidable* another) {
 	case Collidable::ball:
 		is_living = false;
 		break;
-	default:
 	}
 }

@@ -70,8 +70,23 @@
     <Filter Include="Source Files\shapes\game_objects\ball">
       <UniqueIdentifier>{9553c146-86cf-4439-b6cc-5b58ac5581e1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\shapes\game_objects\Net">
+    <Filter Include="Source Files\shapes\game_objects\net">
       <UniqueIdentifier>{a069cf58-ce0f-46cd-930f-c43dabbbfc35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\main_program\init">
+      <UniqueIdentifier>{0e15433b-171b-4a4f-9acb-41b97533d8ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\main_program\init\init_glut">
+      <UniqueIdentifier>{1f83d38c-c12a-4f0c-b291-09a859929cfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\main_program\init\init_env">
+      <UniqueIdentifier>{ea8f6271-bd40-4b0b-b1ff-18916d4d4f29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\main_program\draw">
+      <UniqueIdentifier>{c533e447-4d28-418a-91f7-e60b5e262862}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\environment\the_scene">
+      <UniqueIdentifier>{13e65cee-72e3-4b09-ae5d-4748bde70192}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -99,31 +114,7 @@
     <ClCompile Include="shape_setters.cpp">
       <Filter>Source Files\shapes\abstract\shape</Filter>
     </ClCompile>
-    <ClCompile Include="init_drawables.cpp">
-      <Filter>Source Files\main_program</Filter>
-    </ClCompile>
-    <ClCompile Include="init_env.cpp">
-      <Filter>Source Files\main_program</Filter>
-    </ClCompile>
-    <ClCompile Include="drawables.cpp">
-      <Filter>Source Files\environment</Filter>
-    </ClCompile>
-    <ClCompile Include="display.cpp">
-      <Filter>Source Files\main_program</Filter>
-    </ClCompile>
-    <ClCompile Include="the_square.cpp">
-      <Filter>Source Files\environment</Filter>
-    </ClCompile>
     <ClCompile Include="tick.cpp">
-      <Filter>Source Files\main_program</Filter>
-    </ClCompile>
-    <ClCompile Include="init_glut_window.cpp">
-      <Filter>Source Files\main_program</Filter>
-    </ClCompile>
-    <ClCompile Include="init_glut_functions.cpp">
-      <Filter>Source Files\main_program</Filter>
-    </ClCompile>
-    <ClCompile Include="init_glut.cpp">
       <Filter>Source Files\main_program</Filter>
     </ClCompile>
     <ClCompile Include="racket_constructors.cpp">
@@ -169,22 +160,67 @@
       <Filter>Source Files\shapes\game_objects\ball</Filter>
     </ClCompile>
     <ClCompile Include="net_constructors.cpp">
-      <Filter>Source Files\shapes\game_objects\Net</Filter>
+      <Filter>Source Files\shapes\game_objects\net</Filter>
     </ClCompile>
     <ClCompile Include="net_die.cpp">
-      <Filter>Source Files\shapes\game_objects\Net</Filter>
+      <Filter>Source Files\shapes\game_objects\net</Filter>
     </ClCompile>
     <ClCompile Include="net_move.cpp">
-      <Filter>Source Files\shapes\game_objects\Net</Filter>
+      <Filter>Source Files\shapes\game_objects\net</Filter>
     </ClCompile>
     <ClCompile Include="net_should_die.cpp">
-      <Filter>Source Files\shapes\game_objects\Net</Filter>
+      <Filter>Source Files\shapes\game_objects\net</Filter>
     </ClCompile>
     <ClCompile Include="net_collide_with.cpp">
-      <Filter>Source Files\shapes\game_objects\Net</Filter>
+      <Filter>Source Files\shapes\game_objects\net</Filter>
     </ClCompile>
     <ClCompile Include="net_is_colliding_with.cpp">
-      <Filter>Source Files\shapes\game_objects\Net</Filter>
+      <Filter>Source Files\shapes\game_objects\net</Filter>
+    </ClCompile>
+    <ClCompile Include="the_ball.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="the_net.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="the_racket.cpp">
+      <Filter>Source Files\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="init_glut.cpp">
+      <Filter>Source Files\main_program\init\init_glut</Filter>
+    </ClCompile>
+    <ClCompile Include="init_glut_functions.cpp">
+      <Filter>Source Files\main_program\init\init_glut</Filter>
+    </ClCompile>
+    <ClCompile Include="init_glut_window.cpp">
+      <Filter>Source Files\main_program\init\init_glut</Filter>
+    </ClCompile>
+    <ClCompile Include="init_env.cpp">
+      <Filter>Source Files\main_program\init\init_env</Filter>
+    </ClCompile>
+    <ClCompile Include="init_ball.cpp">
+      <Filter>Source Files\main_program\init\init_env</Filter>
+    </ClCompile>
+    <ClCompile Include="init_net.cpp">
+      <Filter>Source Files\main_program\init\init_env</Filter>
+    </ClCompile>
+    <ClCompile Include="init_racket.cpp">
+      <Filter>Source Files\main_program\init\init_env</Filter>
+    </ClCompile>
+    <ClCompile Include="display.cpp">
+      <Filter>Source Files\main_program\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_scene.cpp">
+      <Filter>Source Files\main_program\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="move.cpp">
+      <Filter>Source Files\main_program</Filter>
+    </ClCompile>
+    <ClCompile Include="collide.cpp">
+      <Filter>Source Files\main_program</Filter>
+    </ClCompile>
+    <ClCompile Include="live.cpp">
+      <Filter>Source Files\main_program</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -209,12 +245,6 @@
     <ClInclude Include="main_program_functions.hpp">
       <Filter>Header Files\main_program</Filter>
     </ClInclude>
-    <ClInclude Include="drawables.hpp">
-      <Filter>Header Files\environment</Filter>
-    </ClInclude>
-    <ClInclude Include="the_square.hpp">
-      <Filter>Header Files\environment</Filter>
-    </ClInclude>
     <ClInclude Include="shape.hpp">
       <Filter>Header Files\shapes\abstract</Filter>
     </ClInclude>
@@ -235,6 +265,18 @@
     </ClInclude>
     <ClInclude Include="net.hpp">
       <Filter>Header Files\shapes\game_objects</Filter>
+    </ClInclude>
+    <ClInclude Include="the_ball.hpp">
+      <Filter>Header Files\environment\the_scene</Filter>
+    </ClInclude>
+    <ClInclude Include="the_net.hpp">
+      <Filter>Header Files\environment\the_scene</Filter>
+    </ClInclude>
+    <ClInclude Include="the_racket.hpp">
+      <Filter>Header Files\environment\the_scene</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.hpp">
+      <Filter>Header Files\environment\the_scene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

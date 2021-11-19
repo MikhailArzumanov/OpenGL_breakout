@@ -1,7 +1,17 @@
 #pragma once
-void init_drawables();
+
+void init_net();
+void init_ball();
+void init_racket();
 void init_env();
 
+void move();
+
+void collide();
+
+void live();
+
+void draw_scene();
 void display();
 
 void tick(int null);

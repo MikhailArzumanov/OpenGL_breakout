@@ -148,16 +148,21 @@
     <ClCompile Include="ball_is_colliding_with.cpp" />
     <ClCompile Include="ball_move.cpp" />
     <ClCompile Include="ball_should_die.cpp" />
+    <ClCompile Include="collide.cpp" />
     <ClCompile Include="color_set_to_env.cpp" />
     <ClCompile Include="display.cpp" />
-    <ClCompile Include="drawables.cpp" />
+    <ClCompile Include="draw_scene.cpp" />
     <ClCompile Include="ellipse_constructors.cpp" />
     <ClCompile Include="ellipse_draw.cpp" />
-    <ClCompile Include="init_drawables.cpp" />
+    <ClCompile Include="init_ball.cpp" />
     <ClCompile Include="init_env.cpp" />
     <ClCompile Include="init_glut.cpp" />
     <ClCompile Include="init_glut_functions.cpp" />
     <ClCompile Include="init_glut_window.cpp" />
+    <ClCompile Include="init_net.cpp" />
+    <ClCompile Include="init_racket.cpp" />
+    <ClCompile Include="live.cpp" />
+    <ClCompile Include="move.cpp" />
     <ClCompile Include="net_collide_with.cpp" />
     <ClCompile Include="net_constructors.cpp" />
     <ClCompile Include="net_die.cpp" />
@@ -177,7 +182,9 @@
     <ClCompile Include="rectangle_is_colliding.cpp" />
     <ClCompile Include="shape_getters.cpp" />
     <ClCompile Include="shape_setters.cpp" />
-    <ClCompile Include="the_square.cpp" />
+    <ClCompile Include="the_ball.cpp" />
+    <ClCompile Include="the_net.cpp" />
+    <ClCompile Include="the_racket.cpp" />
     <ClCompile Include="tick.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -186,7 +193,6 @@
     <ClInclude Include="collidable.hpp" />
     <ClInclude Include="color.hpp" />
     <ClInclude Include="drawable.hpp" />
-    <ClInclude Include="drawables.hpp" />
     <ClInclude Include="ellipse.hpp" />
     <ClInclude Include="game_object.hpp" />
     <ClInclude Include="main_program_functions.hpp" />
@@ -194,8 +200,11 @@
     <ClInclude Include="point.hpp" />
     <ClInclude Include="racket.hpp" />
     <ClInclude Include="rectangle.hpp" />
+    <ClInclude Include="scene.hpp" />
+    <ClInclude Include="the_ball.hpp" />
+    <ClInclude Include="the_net.hpp" />
+    <ClInclude Include="the_racket.hpp" />
     <ClInclude Include="shape.hpp" />
-    <ClInclude Include="the_square.hpp" />
     <ClInclude Include="square.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

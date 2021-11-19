@@ -1,6 +1,6 @@
 #include "racket.hpp"
 
 
-void collide_with(Collidable* another) {
+void Racket::collide_with(Collidable* another) {
 	//...
 }

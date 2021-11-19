@@ -1,6 +1,5 @@
 #include "rectangle.hpp"
 #include <glut.h>
-#include <iostream>
 
 void Rectangle::draw() {
     glBegin(GL_POLYGON);

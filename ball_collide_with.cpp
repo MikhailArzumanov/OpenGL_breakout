@@ -7,6 +7,5 @@ void Ball::collide_with(Collidable* another) {
 		v.y = -v.y;
 		c.y += v.y;
 		break;
-	default:
 	}
 }
